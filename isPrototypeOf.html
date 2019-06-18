@@ -80,21 +80,21 @@ tests({
     },
     "(5) It should throw a TypeError when prototypeObj is undefined.": function() {
         var isTypeError = false;
-		try {
-			isPrototypeOf(bird, myDog);
-		} catch (e) {
-			isTypeError = (e instanceof TypeError);
-		}
-		eq(isTypeError, true);
+	try {
+		isPrototypeOf(bird, myDog);
+	} catch (e) {
+		isTypeError = (e instanceof TypeError);
+	}
+	eq(isTypeError, true);
     },
     "(6) It should throw a TypeError when prototypeObj is null.": function() {
         var isTypeError = false;
-		try {
-			isPrototypeOf(null, myDog);
-		} catch (e) {
-			isTypeError = (e instanceof TypeError);
-		}
-		eq(isTypeError, true);
+	try {
+		isPrototypeOf(null, myDog);
+	} catch (e) {
+		isTypeError = (e instanceof TypeError);
+	}
+	eq(isTypeError, true);
     }
 });
 
